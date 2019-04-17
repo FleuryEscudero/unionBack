@@ -7,7 +7,8 @@ var UnionPaylistSchema = Schema ({id:Number,
                                 title:String,
                                 description:String,
                                 month:String,
-                                week:String
+                                week:String,
+                                status: {type: Number, default:1}
                                 });                 
 
 

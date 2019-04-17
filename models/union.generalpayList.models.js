@@ -10,7 +10,8 @@ var GeneralUnionPaylistSchema = Schema ({id:Number,
                                 weeks:Number,
                                 year:Number,
                                 employeeId:{type:Schema.ObjectId, ref:'UnionEmployee'},
-                                paylistId:{type:Schema.ObjectId, ref:'UnionPaylist'}
+                                paylistId:{type:Schema.ObjectId, ref:'UnionPaylist'},
+                                status: {type: Number, default:1}
                                 });                 
 
 

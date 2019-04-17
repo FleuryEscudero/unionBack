@@ -9,7 +9,8 @@ var UnionEmployeeSchema = Schema ({id:Number,
                                 name2:String,
                                 surname1:String,
                                 surname2:String,
-                                payListId:{type: SchemaObjectId, ref: 'UnionPaylist'}
+                                payListId:{type:Schema.ObjectId, ref: 'UnionPaylist'},
+                                status:{type: Number, default:1}
                                 });                 
 
 
